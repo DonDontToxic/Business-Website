@@ -4,7 +4,9 @@ import home1 from "../img/home1.png"
 import { About, Description, Image, Hidden} from "../styles"
 // Framer Motion
 import {motion} from "framer-motion";
-import {titleAnimation, fade, photoAnimation} from "../animation";
+import { titleAnimation, fade, photoAnimation } from "../animation";
+import Wave from "./Wave";
+
 const AboutSection = () => {
     return (
         <About> 
@@ -40,6 +42,7 @@ const AboutSection = () => {
                     variants={photoAnimation}
                 />
             </Image>
+            <Wave/>
         </About>
     )
 }
