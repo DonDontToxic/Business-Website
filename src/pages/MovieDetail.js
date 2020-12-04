@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // Animations
 import {motion} from "framer-motion";
 import { pageAnimation } from "../animation"
+import ScrollTop from "../components/ScrollTop";
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -43,6 +44,7 @@ const MovieDetail = () => {
                     <ImageDisplay>
                         <img src={movie.secondaryImg} alt="movie.title"/>
                     </ImageDisplay>
+                <ScrollTop/>
                 </Details>
             )}
             {!movie && (<div>
@@ -50,6 +52,7 @@ const MovieDetail = () => {
                 <StyledText>Back to
                     <StyledLink to="/"> Home</StyledLink>
                 </StyledText>
+                <ScrollTop/>
             </div>)}
         </>
     )
