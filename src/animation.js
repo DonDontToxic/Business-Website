@@ -96,14 +96,14 @@ export const scrollReveal = {
         opacity: 0,
         scale: 1.2,
         transition: {
-            durarion: 1.5
+            durarion: 0.5
         }
     },
     show: {
         opacity: 1,
         scale: 1,
         transition: {
-            durarion: 1.5
+            durarion: 0.5
         }
     }
 }
